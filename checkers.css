@@ -1,0 +1,118 @@
+.black {
+    background-color: rgb(99, 41, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; 
+    height: 80px; 
+}
+
+.white {
+    background-color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; 
+    height: 80px; 
+}
+body
+{
+    background-color:rgb(225, 186, 119);
+}
+
+#Checkers
+{
+    text-align: center;
+}
+
+.board
+{
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    gap: 0;
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    margin-top: 100px;
+    outline: 10px solid rgba(135, 67, 3, 0.929);
+}
+
+.piece {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.542);
+}
+
+.red-piece {
+    background-color: rgb(228, 98, 98);
+}
+
+.white-piece {
+    background-color: rgb(247, 245, 245);
+}
+.button_box
+{
+    margin: auto;
+    height: 200px;
+    width: 100px;
+    margin-top: 50px; 
+}
+.buttons
+{
+    background-color: rgb(227, 241, 236);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 3px; 
+}
+.selected
+{
+   box-shadow: 5px 5px 50px red inset;
+}
+
+.king
+{
+    box-shadow: 5px 5px 15px yellow inset;
+}
+.modal-background
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transform: translate(-50%, -50%); /*מירכוז המודל בלוח*/
+}
+.modal 
+{
+    display: grid; 
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    outline: 10px solid rgb(228, 217, 217);
+}
+.button_add_game
+{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: rgb(133, 76, 76);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+}
+.game-container {
+    display: flex;
+    position: relative; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
